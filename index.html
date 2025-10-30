@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Annas Al Farisi — Portfolio</title>
+  <meta name="description" content="Cloud • MLOps • Automation — Portfolio of Annas Al Farisi." />
+  <meta property="og:title" content="Annas Al Farisi — Portfolio" />
+  <meta property="og:description" content="Cloud • MLOps • Automation — Selected projects and GitHub activity." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <style>
+    :root{--bg:#0b0f14;--fg:#e5eef7;--muted:#8aa0b4;--card:#121923;--accent:#0ea5e9;--ok:#22c55e;--warn:#f59e0b}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1024px;margin-inline:auto;padding:24px}
+    header{position:sticky;top:0;background:linear-gradient(180deg,rgba(11,15,20,.9),rgba(11,15,20,.6));backdrop-filter: blur(8px);z-index:10;border-bottom:1px solid #1f2a37}
+    header .inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 24px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#9333ea);display:grid;place-items:center;color:white;font-weight:900}
+    nav a{margin-left:16px;color:var(--fg);opacity:.9}
+    nav a:hover{opacity:1}
+    .hero{padding:64px 24px 32px;border-bottom:1px solid #1f2a37;background:radial-gradient(1200px 600px at 80% -10%,rgba(14,165,233,.18),transparent)}
+    .hero h1{font-size:clamp(28px,6vw,48px);margin:8px 0 8px;letter-spacing:.3px}
+    .hero p.sub{color:var(--muted);max-width:70ch;margin:0}
+    .badges{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+    .badge{border:1px solid #1f2a37;border-radius:999px;padding:6px 10px;background:#0f1620;color:#c9d6e2;font-size:13px}
+    .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+    .btn{padding:10px 14px;border-radius:12px;border:1px solid #1f2a37;background:#0f1620;color:#e5eef7;display:inline-flex;align-items:center;gap:8px}
+    .btn.primary{background:linear-gradient(135deg,var(--accent),#38bdf8);color:#07131a;border-color:transparent;font-weight:600}
+
+    section{padding:32px 24px;border-bottom:1px solid #1f2a37}
+    h2{font-size:clamp(22px,4vw,28px);margin:0 0 16px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .card{grid-column:span 12;background:var(--card);border:1px solid #1f2a37;border-radius:16px;padding:16px}
+    @media (min-width:768px){.card{grid-column:span 6}}
+    .card h3{margin:0 0 6px;font-size:18px}
+    .meta{color:var(--muted);font-size:14px;margin-bottom:8px}
+    .pill{display:inline-block;background:#0f1620;border:1px solid #1f2a37;color:#c9d6e2;padding:4px 8px;border-radius:999px;font-size:12px;margin:4px 6px 0 0}
+
+    .list{display:grid;gap:12px}
+    .repo{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:12px;border:1px solid #1f2a37;border-radius:12px;background:#0f1620}
+    .repo .name{font-weight:600}
+    .repo .right{display:flex;gap:12px;align-items:center;color:var(--muted);font-size:14px}
+    footer{padding:32px 24px;color:#94a9be;text-align:center}
+    .small{font-size:13px;color:#8aa0b4}
+    .tagline{color:#cfe8f7}
+    .visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="inner container">
+      <div class="brand">
+        <div class="logo">A</div>
+        <div>
+          <strong>Annas Al Farisi</strong><br>
+          <span class="small">Cloud • MLOps • Automation</span>
+        </div>
+      </div>
+      <nav aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#github">GitHub</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <p class="tagline">Hello, I’m Annas 👋</p>
+      <h1>Building intelligent automations on reliable cloud infrastructure.</h1>
+      <p class="sub">I design and ship practical systems across Cloud, MLOps, and workflow automation: from AI agent reasoning pipelines to self‑hosted services and n8n bots. Here are a few selected works and live GitHub activity.</p>
+      <div class="badges" aria-label="Tech Stack">
+        <span class="badge">Python</span>
+        <span class="badge">Node.js</span>
+        <span class="badge">Docker</span>
+        <span class="badge">AWS</span>
+        <span class="badge">LangChain</span>
+        <span class="badge">n8n</span>
+        <span class="badge">Linux</span>
+      </div>
+      <div class="cta">
+        <a class="btn primary" id="btnGithub" href="https://github.com/annasalfarisi" target="_blank" rel="noopener">View GitHub</a>
+        <a class="btn" href="#projects">See Projects</a>
+      </div>
+    </section>
+
+    <section class="container" id="projects">
+      <h2>Featured Projects</h2>
+      <div class="grid" id="featuredGrid">
+        <!-- Cards inserted by JS below for easy editing -->
+      </div>
+      <p class="small">Tip: Each project links to its GitHub repo or live demo.</p>
+    </section>
+
+    <section class="container" id="github">
+      <h2>Latest from GitHub</h2>
+      <div class="list" id="repoList" aria-live="polite">
+        <div class="small">Loading repositories…</div>
+      </div>
+      <p class="small">Showing your most recently updated public repositories.</p>
+    </section>
+
+    <section class="container" id="contact">
+      <h2>Contact</h2>
+      <div class="grid">
+        <div class="card" style="grid-column:span 12">
+          <p>Email: <a href="mailto:annasalfarisi@gmail.com">annasalfarisi@gmail.com</a></p>
+          <p>LinkedIn: <a href="https://linkedin.com/in/annasalfarisi" target="_blank" rel="noopener">linkedin.com/in/annasalfarisi</a></p>
+          <p>Download CV (PDF): <a href="#" id="cvLink" download>available soon</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© <span id="year"></span> Annas Al Farisi — Built with vanilla HTML/CSS/JS</div>
+    </div>
+  </footer>
+
+  <script>
+    // ====== EDIT THESE TWO LINES ======
+    const GITHUB_USERNAME = "annasalfa"; // <- your GitHub username
+    const CV_PDF_URL = "Curriculum_Vitae_-_Annas_Al_Farisi_Riwayadi_New.pdf"; // e.g. replace with https://your-domain/cv-annas.pdf
+    // ==================================
+
+    // Featured projects — quick to edit without touching HTML
+    const featured = [
+      {
+        title: "AI Agent Reasoning System",
+        meta: "LangChain • LangGraph • Docker",
+        desc: "Multi-role reasoning pipeline (Researcher/Critic/Synthesizer) for automated research and ideation.",
+        url: "https://github.com/" + GITHUB_USERNAME + "/ai-agent-reasoning"
+      },
+      {
+        title: "n8n Invoice Automation Bot",
+        meta: "n8n • AWS S3 • Telegram API",
+        desc: "Generates and sends PDF invoices via Telegram/WhatsApp; reduces manual work by ~90%.",
+        url: "https://github.com/" + GITHUB_USERNAME + "/n8n-invoice-bot"
+      },
+      {
+        title: "NAS with DDNS & Port Forwarding",
+        meta: "OpenMediaVault • DuckDNS • Linux",
+        desc: "Self-hosted storage with secure external access on dynamic IP (no static IP cost).",
+        url: "https://github.com/" + GITHUB_USERNAME + "/nas-ddns-implementation"
+      },
+      {
+        title: "Bapenda Kabupaten Puncak Website",
+        meta: "HTML • CSS • JS • PHP",
+        desc: "Official government website project, public information portal and news publishing.",
+        url: "https://github.com/" + GITHUB_USERNAME + "/bapenda-puncak-site"
+      }
+    ];
+
+    const featuredGrid = document.getElementById('featuredGrid');
+    featured.forEach(p => {
+      const card = document.createElement('article');
+      card.className = 'card';
+      card.innerHTML = `
+        <h3><a href="${p.url}" target="_blank" rel="noopener">${p.title}</a></h3>
+        <div class="meta">${p.meta}</div>
+        <p>${p.desc}</p>
+        <div>${p.meta.split('•').map(t => `<span class='pill'>${t.trim()}</span>`).join('')}</div>
+      `;
+      featuredGrid.appendChild(card);
+    });
+
+    // Update year & CV link
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const cvLink = document.getElementById('cvLink');
+    if (CV_PDF_URL && CV_PDF_URL !== '#') { cvLink.href = CV_PDF_URL; cvLink.textContent = 'download'; }
+    else { cvLink.removeAttribute('href'); cvLink.removeAttribute('download'); }
+
+    // Fetch latest repos from GitHub (public, sorted by updated)
+    async function loadRepos(){
+      try{
+        const res = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=12&sort=updated`);
+        if(!res.ok) throw new Error('GitHub API error');
+        const data = await res.json();
+        const list = document.getElementById('repoList');
+        list.innerHTML = '';
+        data
+          .filter(r => !r.fork)
+          .slice(0,8)
+          .forEach(r => {
+            const item = document.createElement('div');
+            item.className = 'repo';
+            const lang = r.language ? `<span class="pill">${r.language}</span>` : '';
+            const topics = (r.topics||[]).slice(0,3).map(t=>`<span class='pill'>${t}</span>`).join('');
+            item.innerHTML = `
+              <div class="left">
+                <a class="name" href="${r.html_url}" target="_blank" rel="noopener">${r.name}</a>
+                <div class="small">${r.description || ''}</div>
+              </div>
+              <div class="right">
+                ${lang}${topics}
+                <span title="Stars">★ ${r.stargazers_count}</span>
+                <span title="Updated">⟳ ${new Date(r.updated_at).toLocaleDateString()}</span>
+              </div>
+            `;
+            list.appendChild(item);
+          })
+      }catch(e){
+        document.getElementById('repoList').innerHTML = '<div class="small" style="color:#fca5a5">Failed to load repositories. Check your username or try again later.</div>';
+      }
+    }
+    loadRepos();
+  </script>
+</body>
+</html>
