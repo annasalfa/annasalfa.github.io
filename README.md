@@ -18,13 +18,14 @@ It is lightweight, responsive, and easy to customize.
 - Hosted via GitHub Pages  
 
 ## Folder Structure
+```js
 annasalfa.github.io/
 ├── index.html
 ├── style.css
 ├── script.js
 ├── Curriculum_Vitae_-_Annas_Al_Farisi_Riwayadi_New.pdf
 └── README.md
-
+```
 ## Customization
 Edit constants in `script.js`:
 ```js
