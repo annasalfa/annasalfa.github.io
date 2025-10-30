@@ -30,6 +30,7 @@ Edit constants in `script.js`:
 ```js
 const GITHUB_USERNAME = "annasalfa";
 const CV_PDF_URL = "./Curriculum_Vitae_-_Annas_Al_Farisi_Riwayadi_New.pdf";
+```
 
 ## Author
 **Annas Al Farisi**  
