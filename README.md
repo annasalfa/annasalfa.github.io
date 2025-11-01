@@ -1,4 +1,4 @@
-# Annas Al Farisi — Portfolio Website
+# Portfolio Website
 
 A simple and clean personal portfolio website built with HTML, CSS, and JavaScript.  
 It showcases selected projects, recent GitHub activity, and contact information.
